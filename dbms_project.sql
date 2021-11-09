@@ -39,6 +39,7 @@ CREATE TABLE `employee` (
 LOCK TABLES `employee` WRITE;
 /*!40000 ALTER TABLE `employee` DISABLE KEYS */;
 INSERT INTO `employee` VALUES (1,'Gautam','Kumar Singh',50000,'New Delhi');
+INSERT INTO employee VALUES (2,'Suraj',' ',60000,'Gaziabad');
 /*!40000 ALTER TABLE `employee` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
