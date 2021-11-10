@@ -1,0 +1,29 @@
+
+
+insert into employee values(SN,Fname,Lname,slalary,address)
+values(01,'Ms. Shobha','Bhatt','1.25cr','Bihar')
+
+insert into employee values(02,'Ms. Vinamrita','Singh','1.05cr','Punjab');
+insert into employee values(03,'Mr. Shantanu','Das','1.15cr','Bangal');
+insert into employee values(04,'Mr. G','Veda','0.75cr','Tamil Nadu');
+insert into employee values(05,'Mr. Suresh kumar','Poonia','1.25cr','Punjab');
+insert into employee values(06,'Mr. Pradeep','Kumar','1.35cr','UK');
+insert into employee values(07,'Mr. Jitender','Mishra','1.45cr','J&K');
+insert into employee values(08,'Ms. Amita','Jain','1.25cr','UP');
+insert into employee values(09,'Ms. Pratima','Kumari','NIL','Delhi');
+insert into employee values(10,'Ms. Neelam','Kumari','0.75cr','UK');
+insert into employee values(11,'Mr. Prabhu','Deva','0.95cr','Maharashtra');
+insert into employee values(12,'Ms. Prafula','Devi','0.75cr','Chhattis Garh');
+insert into employee values(13,'Mr. Prabhat','Kumar','0.85cr','UK');
+insert into employee values(14,'Mr. Shiva','Kumar','1.95cr','Delhi');
+insert into employee values(15,'Mr. Ankit','G','1.95cr','Delhi');
+insert into employee values(16,'Mr. Ashish','Garg','1.45cr','Delhi');
+insert into employee values(17,'The Phenomena',' ','9.63cr','Delhi');
+insert into employee values(18,'Mr. Tarun','Adhikari jee ','9.63cr','Delhi');
+insert into employee values(19,'Mr. GK','S','9.63cr','Delhi');
+insert into employee values(20,'Mr. Roshan','Kumar','9.63cr','Delhi');
+insert into employee values(21,'Mr. Saksham','Gangrade','9.63cr','Delhi');
+insert into employee values(22,'Ms. Swati','Singh','6.63cr','Delhi');
+insert into employee values(23,'Dr. Ritika','Singh','1.63cr','Delhi');
+insert into employee values(24,'Dr. Bhushan','Kumar','1.63cr','Delhi');
+insert into employee values(25,'Mr. Jagat','Singh ','0.63cr','Delhi');
