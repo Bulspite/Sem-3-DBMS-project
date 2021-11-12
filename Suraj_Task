@@ -1,0 +1,26 @@
+
+create database Client_data;
+use Client_data;
+
+
+create table com_data
+(Auditor_SN int, 
+Company_ID int,  
+Type_ varchar(25),
+Company_Name varchar(35)
+)
+
+
+insert into com_data (Auditor_SN, Company_ID, Type_, Company_Name)
+values(101, 101, 'Premium','Google');
+
+insert into com_data values(102, 251, 'General','Amazone');
+insert into com_data values(103, 891, 'GOLD','Zoomia');
+insert into com_data values(104, 781, 'Silver','NSUT');
+insert into com_data values(105, 369, 'Gold','Ginger');
+insert into com_data values(106, 257, 'General','Holla Corp');
+insert into com_data values(107, 693, 'Silver','DTU');
+insert into com_data values(108, 720, 'Premium','The Phenomena');
+insert into com_data values(109, 936, 'Diamond','Cloud Server');
+
+select * from com_data
