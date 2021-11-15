@@ -1,0 +1,31 @@
+create databases audit_data;
+use audit_data;
+
+create table audit_com
+( Company_id int NOT NULL ,
+ Location varchar(100),
+ Type varchar(50),
+ auditer_id int NOT NULL,
+ FOREIGN KEY(company_id) REFERENCES Client_date(Company_ID),
+ FOREIGN KEY(auditer_id) REFERENCES employee(SN)
+);
+
+insert into audit_com (Company_id,Location,Type ,auditer_id)
+values (101,'Delhi','Monthly',01);
+
+insert into audit_com values (251,'Punjab','Yearly',02);
+insert into audit_com values (891,'Uk','quarterly',03);
+insert into audit_com values (781,'UP','HalfYearly',04);
+insert into audit_com values (369,'Bihar','Yearly',05);
+insert into audit_com values (257,'Delhi','Monthly',06);
+insert into audit_com values (693,'Punjab','Yearly',07);
+insert into audit_com values (720,'Tamil Nadu','HalfYearly',08);
+insert into audit_com values (936,'Maharashtra','quarterly',09);
+insert into audit_com values (252,'Bangal','Yearly',10);
+insert into audit_com values (259,'Pune','Yearly',11);
+insert into audit_com values (250,'Rajastan','Yearly',12);
+insert into audit_com values (289,'J&K','Monthly',13);
+insert into audit_com values (203,'Punjab','Yearly',14);
+insert into audit_com values (291,'Delhi','HalfYearly',15);
+
+select * from audit_com
