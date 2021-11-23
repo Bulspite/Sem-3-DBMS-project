@@ -22,28 +22,16 @@ insert into com_data values(107, 693, 'Silver','DTU');
 insert into com_data values(108, 720, 'Premium','The Phenomena');
 insert into com_data values(109, 936, 'Diamond','Cloud Server');
 
-
-
-create table Contry_tab
-(contry_ID int primary key,
-Contry_Name varchar(30) not null,
-Company_ID int,   
-foreign key (Auditor_SN)
-	references com_data(Auditor_SN)
-);
-
-insert into Contry_tab (contry_ID, Contry_Name)
-values(100, 'India');
-
-insert into Contry_tab values(101,'USA');
-insert into Contry_tab values(100,'INDIA');
-insert into Contry_tab values(100,'INDIA');
-insert into Contry_tab values(101,'USA');
-insert into Contry_tab values(100,'INDIA');
-insert into Contry_tab values(100,'INDIA');
-insert into Contry_tab values(101,'USA');
-insert into Contry_tab values(100,'INDIA');
-
+ALTER TABLE sample.com_data 
+CHANGE COLUMN Auditor_SN Auditor_SN INT NOT NULL ,
+ADD PRIMARY KEY (Auditor_SN);
+;
+ALTER TABLE sample.com_data 
+ADD CONSTRAINT audit_fk
+  FOREIGN KEY (Auditor_SN)
+  REFERENCES sample.employee (SN)
+  ON DELETE NO ACTION
+  ON UPDATE NO ACTION;
 
 select * from com_data
-select * from Contry_tab
+
