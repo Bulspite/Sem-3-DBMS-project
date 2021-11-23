@@ -8,8 +8,7 @@ create table com_data
 Company_ID int,  
 Type_ varchar(25),
 Company_Name varchar(35)
-)
-
+);
 
 insert into com_data (Auditor_SN, Company_ID, Type_, Company_Name)
 values(101, 101, 'Premium','Google');
@@ -23,4 +22,28 @@ insert into com_data values(107, 693, 'Silver','DTU');
 insert into com_data values(108, 720, 'Premium','The Phenomena');
 insert into com_data values(109, 936, 'Diamond','Cloud Server');
 
+
+
+create table Contry_tab
+(contry_ID int primary key,
+Contry_Name varchar(30) not null,
+Company_ID int,   
+foreign key (Auditor_SN)
+	references com_data(Auditor_SN)
+);
+
+insert into Contry_tab (contry_ID, Contry_Name)
+values(100, 'India');
+
+insert into Contry_tab values(101,'USA');
+insert into Contry_tab values(100,'INDIA');
+insert into Contry_tab values(100,'INDIA');
+insert into Contry_tab values(101,'USA');
+insert into Contry_tab values(100,'INDIA');
+insert into Contry_tab values(100,'INDIA');
+insert into Contry_tab values(101,'USA');
+insert into Contry_tab values(100,'INDIA');
+
+
 select * from com_data
+select * from Contry_tab
